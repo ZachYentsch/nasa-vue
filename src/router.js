@@ -17,11 +17,16 @@ const routes = [
     component: loadPage('AboutPage')
   },
   {
+    path: '/nasa',
+    name: 'Nasa',
+    component: loadPage('NasaPage')
+  },
+  {
     path: '/account',
     name: 'Account',
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
-  }
+  },
 ]
 
 export const router = createRouter({
